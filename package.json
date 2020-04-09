@@ -1,0 +1,23 @@
+{
+  "name": "pptr-E2E",
+  "version": "1.0.0",
+  "description": "e2e test and builder class pattern",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --testTimeout=30000 --detectOpenHandles  ./src/tests/**.test.js",
+    "clean": "rm -rf build",
+    "build": "babel -d build/ src/"
+  },
+  "author": "Armin",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^2.1.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "jest": "^25.1.0"
+  }
+}
